@@ -2,7 +2,7 @@
 
 int main()
 {
-  double n, d[] = {100.00, 50.00, 20.00, 10.00, 5.00, 2.00, 1.00, 0.50, 0.25, 0.10, 0.5, 0.01};
+  double n, d[] = {100.00, 50.00, 20.00, 10.00, 5.00, 2.00, 1.00, 0.50, 0.25, 0.10, 0.05, 0.01};
 
   int contarMoeda = 0;
 
@@ -26,15 +26,15 @@ int main()
       }
       if(d[contadorPosicao] == 1.0)
       {
-        printf("MOEDAS\n");
+        printf("MOEDAS:\n");
       }
       if(d[contadorPosicao] >= 2.00 )
       {
-        printf("%d nota(s) R$ %2.lf\n", contarMoeda,d[contadorPosicao]);
+        printf("%d nota(s) de R$ %.2lf\n", contarMoeda,d[contadorPosicao]);
       }
       else
       {
-        printf("%d moeda(s) R$ %.2lf\n", contarMoeda, d[contadorPosicao]);
+        printf("%d moeda(s) de R$ %.2lf\n", contarMoeda, d[contadorPosicao]);
       }
       contadorPosicao++;
   }
